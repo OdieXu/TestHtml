@@ -1,0 +1,13 @@
+p{
+    color: gray;
+    font-size: 50px;
+}
+
+table{
+    border: 1px solid #000001;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid #FF0001;
+}

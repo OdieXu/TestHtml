@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎</title>
+    <style>
+        h1{
+            color: blue;
+            font-size: 50px;
+        }
+        /* p{
+            color: yellow;
+        } */
+    </style>
+    <link rel="stylesheet" href="./css/welcom.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+</head>
+<body>
+    <h1 align="right">hello world，hello，how are you？</h1>
+    fine, thank you, and you?
+    <!-- <script src="index.js"> -->
+        <h2 align="center">What's your name?</h2>
+            <h4>My name is Xurui.</h4>
+
+    <!-- </script> -->
+
+    <!-- 段落标签
+    内连方式设置标签的样式
+    -->
+    <p style="color: green; font-size: 40px;">测试一下p标签</p>
+
+    <!-- br表示换行 -->
+    <p>测试一下p2<br/>标签</p>
+
+
+    <!-- 水平线: size表示高度 -->
+    <hr color="green" width="200px" size="30px" align="left">
+    <hr color="red" width="100px" size="20px">
+    <hr color="yellow" width="100px" size="10px" align="right">
+
+    <!-- 图片: 绝对路径的图片无法加载；项目外的图片无法加载 -->
+    <img src="图1.png" alt="测试图片1" width="200" height="200">
+    <img src="./image/图2.png" alt="测试图片2">
+    <img src="/Users/xurui/H5/test2/image/xurui2.jpeg" alt="测试图片3" title="宏达驾校">
+    <img src="../xurui2.jpeg" alt="测试图片4" title="宏达驾校">
+    <img src="https://gips2.baidu.com/it/u=195724436,3554684702&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960" alt="测试图片5" title="宏达驾校">
+
+
+    <!-- 超文本链接：前面必须带上http:// 或者 https:// -->
+    <a href="https://www.baidu.com">跳转到百度</a>
+    <a href="https://www.163.com">跳转到网易</a>
+    <!-- 未点击过的链接显示成蓝色，已点击过的显示成紫色 -->
+    <a href="https://www.sina.com.cn">跳转新浪</a>
+    <a href="https://www.sina.com.cn">
+        <!-- 加入一个图片，点击跳转 -->
+        <p>点击头像跳转新浪</p>
+        <span style="color: red;">普通文本</span>
+        <img src="./image/图1.png" alt="图1" width="100" height="100">
+    </a>
+
+    <!-- 不同样式的文本标签 -->
+    <em>定义着重文字</em>
+    <b>粗体</b>
+    <i>斜体</i>
+    <strong>加重</strong>
+    <del>删除</del>
+    <span>普通</span>
+
+    <span class="person">人人人人人人人人人人人人人人人人</span>
+    <p class="good size">我是商品</p>
+
+
+
+    <!-- 有序标签 -->
+    <ol>
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+        <li>第四条</li>
+    </ol>
+
+    <ol type="a">
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+        <li>第四条</li>
+    </ol>
+
+    <ol type="A">
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+        <li>第四条</li>
+    </ol>
+
+    <ol type="i">
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+        <li>第四条</li>
+    </ol>
+
+    <ol type="I">
+        <li>
+            第一条水果
+            <ol type="a">
+                <li>苹果</li>
+                <li>橘子</li>
+                <li>香蕉</li>
+            </ol>
+        </li>
+        <li>第二条</li>
+        <li>第三条</li>
+        <li>第四条</li>
+    </ol>
+
+    <!-- 无序标签
+    type:表示前面的样式，圆形，方形等
+    -->
+    <ul type="disc">
+        <li>
+            第一条水果
+            <ol type="a">
+                <li>苹果</li>
+                <li>橘子</li>
+                <li>香蕉</li>
+            </ol>
+        </li>
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+    </ul>
+
+    <ul type="circle">
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+    </ul>
+
+    <ul type="square">
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+    </ul>
+    <ul type="none">
+        <li>第一条</li>
+        <li>第二条</li>
+        <li>第三条</li>
+    </ul>
+
+    <!-- 表格
+    表格：<table>
+    行：tr
+    列：td
+    边框：border（标红表示不推荐用）（一般会用css代替这个border）
+    宽度：width
+    高度：height
+    水平合并：colspan   :   水平合并后，td就要少一列，否则会对不齐
+    垂直合并：rowspan   :   垂直合并后，tr要少一行，否则会对不齐
+    -->
+    <table width="300" height="100">
+        <tr>
+            <td>行1列1</td>
+            <td>行1列2</td>
+            <td rowspan="2">行1列3</td>
+        </tr>
+        <tr>
+            <td colspan="2">行2列1</td>
+            <!-- <td>行2列2</td> -->
+            <!-- <td>行2列3</td> -->
+        </tr>
+        <tr>
+            <td>行3列1</td>
+            <td>行3列2</td>
+            <td>行3列3</td>
+        </tr>
+        <tr>
+            <td>行4列1</td>
+            <td>行4列2</td>
+            <td>行4列3</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>行1列1</td>
+            <td>行1列2</td>
+            <td>行1列3</td>
+        </tr>
+        <tr>
+            <td>行2列1</td>
+            <td>行2列2</td>
+            <td>行2列3</td>
+        </tr>
+        <tr>
+            <td>行3列1</td>
+            <td>行3列2</td>
+            <td>行3列3</td>
+        </tr>
+        <tr>
+            <td>行4列1</td>
+            <td>行4列2</td>
+            <td>行4列3</td>
+        </tr>
+    </table>
+
+
+    <p>表单</p>
+    <!-- 表单
+    action:服务器地址
+    name：表单名称
+    -->
+    <form action="" method="get|post" name="login">
+        <!-- 文本输入框 -->
+        用户名：<input type="text" name="姓名">
+        <br>
+        <!-- 密码输入框 -->
+        密码：<input type="password" name="密码">
+        <br>
+        <!-- 登陆按钮 -->
+        <input type="submit" value="登陆">
+    </form>
+
+
+    <!-- div容器元素 -->
+    <div id="header"></div>
+
+    <!-- h5新增的标签
+    <header></header> 头部
+    <nav></nav> 导航
+    <section></section> 定义文档中的节，比如章节、页眉、页脚
+    <aside></aside> 侧边栏
+    <footer></footer> 脚部
+    <article></article> 代表一个独立的、完整的相关内容块、例如一篇完整的论坛帖子、一个用户评论等
+    -->
+
+</body>
+</html> 
